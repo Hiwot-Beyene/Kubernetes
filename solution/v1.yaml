@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mydeployment
-  labels:
-    app: mywebapp
-    tier: frontend
+  name: my-deployment
+  annotations:
+    submitted-by: hiwot-beyene-ugr3774
+    author: "Hiwot Beyene - UGR/3774/13"
 spec:
   replicas: 1
   selector:

@@ -4,6 +4,10 @@ metadata:
   name: mywebapp
   labels:
     app: mywebapp
+    student: hiwot-beyene-ugr3774
+  annotations:
+    submitted-by: hiwot-beyene-ugr3774
+    author: "Hiwot Beyene - UGR/3774/13"
 spec:
   ports:
   - port: 80
@@ -20,6 +24,10 @@ metadata:
   name: mydeployment
   labels:
     app: mywebapp
+    student: hiwot-beyene-ugr3774
+  annotations:
+    submitted-by: hiwot-beyene-ugr3774
+    author: "Hiwot Beyene - UGR/3774/13"
 spec:
   replicas: 1
   selector:
@@ -31,7 +39,8 @@ spec:
       labels:
         app: mywebapp
         tier: frontend
-    spec: # Pod spec
+        student: hiwot-beyene-ugr3774
+    spec:
       containers:
       - name: mycontainer
         image: devopsjourney1/mywebapp

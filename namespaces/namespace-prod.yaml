@@ -2,5 +2,9 @@ kind: Namespace
 apiVersion: v1  
 metadata:  
  name: prod 
- labels:  
-   name: prod
+ labels:
+    app: mywebapp
+    student: hiwot-beyene-ugr3774
+ annotations:
+    submitted-by: hiwot-beyene-ugr3774
+    author: "Hiwot Beyene - UGR/3774/13"  
